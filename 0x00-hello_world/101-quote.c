@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - Entry point
+ * main - Running of execution
  *
- * Return: Always 0 (Success)
+ * Return: 1
  */
 int main(void)
-{
-	fwrite(2, "and that piece of art is useful" - Dora Korpar, 2015-10-19\n", 61);
+{	char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, msg, 59);
 	return (1);
 }
