@@ -4,6 +4,7 @@
  * main - tests function that printsif integer is positive or negative
  * Return: 0
  */
+
 int main(void)
 {
 	int i;
