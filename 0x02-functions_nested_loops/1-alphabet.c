@@ -3,16 +3,16 @@
 /**
  * print_alphabet - print alphabet
  *
- * Return: void
+ * Return: Void
  */
 void print_alphabet(void)
 {
-	char c;
+	char letter = 'a';
 
-	for (c = 'a'; c <= 'z'; c++)
+	while (letter <= 'z')
 	{
-		putchar(c);
+		_putchar(letter);
+		letter++;
 	}
-
-	putchar('\n');
+	_putchar('\n');
 }
