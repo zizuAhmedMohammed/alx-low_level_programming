@@ -2,8 +2,8 @@
 
 /**
  * main - causes an infinite loop
- * don't delete it!
  * Return: 0
+ * don't delete it!
  */
 
 int main(void)
