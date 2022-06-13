@@ -1,24 +1,41 @@
-#include "holberton.h"
+#include <time.h>
 
 /**
- * print_rev - prints a string in stdout in reverse
- * @s: string to print
+ * main -random password generator for 101-crackme
  *
- * Return: Void
+ * Return: Always 0
  */
-
-void print_rev(char *s)
+int main(void)
 {
-	int i = 0;
+	int i, j, k, s;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[58];
 
-	while (*(s + i))
-		i++;
-	i = i - 1;
-	while (i >= 0)
+	srand(time(NULL));
+	while (s != 2772)
 	{
-		_putchar(*(s + i));
-		i--;
+		i = k = s = 0;
+		while ((2772 - 122) > s)
+		{
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
+		}
+		while (c[k])
+		{
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
+		}
 	}
+	p[i] = '\0';
+	printf("%s", p);
 
-	_putchar('\n');
+	return (0);
 }
