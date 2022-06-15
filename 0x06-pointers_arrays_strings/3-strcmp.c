@@ -19,5 +19,35 @@ int _strcmp(char *s1, char *s2)
 		a++;
 	}
 
+	while (s2[b])
+	{
+		b++;
+	}
+
+	if (a <= b)
+	{
+		lim = a;
+	}
+	else
+	{
+		lim = b;
+	}
+
+	while (c <= lim)
+	{
+		if (s1[c] == s2[c])
+		{
+			c++;
+			continue;
+		}
+		else
+		{
+			v = s1[c] - s2[c];
+			break;
+		}
+
+		c++;
+	}
+
 	return (v);
 }
