@@ -11,7 +11,7 @@ void print_number(int n)
 {
 	int n;
 
-	_putchar("%d", n);
+	_putchar("%d\n", n);
 
 	return (0);
 }
