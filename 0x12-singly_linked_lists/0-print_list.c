@@ -2,12 +2,11 @@
 #include <stdio.h>
 
 /**
-  * print_list - Prints all elements of a list
-  * @h: A linked list
-  *
-  * Return: The number of nodes
-  */
-
+ * print_list - prints all the elements of a list_t list
+ * @h: pointer to the start of the list
+ *
+ * Return: number of nodes in the list
+ */
 size_t print_list(const list_t *h)
 {
 	const list_t *tmp;
